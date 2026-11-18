@@ -1,0 +1,2725 @@
+=== PAGE 1 ===
+ISOGEN Symbol Key (SKEY) Definitions 
+Reference Guide 
+ 
+Version 2012 R2 (11.2) 
+February 2012/December 2012 
+DISO-PE-200016A-UPDATED 
+ 
+
+=== PAGE 2 ===
+Copyright 
+Copyright © 1991-2012 Alias Limited. All rights reserved. 
+Including software, file formats, and audiovisual displays; may be used pursuant to applicable software license agreement; contains confidential and proprietary information of 
+Intergraph and/or third parties which is protected by copyright law, trade secret law, and international treaty, and may not be provided or otherwise made available without proper 
+authorization from Alias Limited. 
+U.S. Government Restricted Rights Legend 
+Use, duplication, or disclosure by the government is subject to restrictions as set forth below. For civilian agencies: This was developed at private expense and is "restricted computer 
+software" submitted with restricted rights in accordance with subparagraphs (a) through (d) of the Commercial Computer Software - Restricted Rights clause at 52.227-19 of the 
+Federal Acquisition Regulations ("FAR") and its successors, and is unpublished and all rights are reserved under the copyright laws of the United States. For units of the Department of 
+Defense ("DoD"): This is "commercial computer software" as defined at DFARS 252.227-7014 and the rights of the Government are as specified at DFARS 227.7202-3. 
+Unpublished - rights reserved under the copyright laws of the United States. 
+Alias Limited 
+1 Stuart Road, Manor Park 
+Runcorn, Cheshire 
+WA7 1TS 
+United Kingdom 
+Telephone: +44 (0) 1928 579311 
+Fax: +44 (0) 1928 579389 
+Email: info@alias.ltd.uk 
+Terms of Use 
+It is the policy of Alias Limited to enforce any and all rights relating to protection of this information. The information contained in this manual is proprietary in nature and may not be 
+reproduced, copied or divulged in whole or in part without the prior written consent of Alias Limited. This manual has been provided pursuant to the terms of a contract or confidentiality 
+agreement. Unauthorized distribution or disclosure of its contents is a violation of that contract or agreement and persons doing so may be liable for penalties as provided by law. 
+Warranties and Liabilities 
+All warranties given by Alias Limited about equipment or software are set forth in the EULA provided with the software or applicable license for the software product signed by Alias 
+Limited, and nothing stated in, or implied by, this document or its contents shall be considered or deemed a modification or amendment of such warranties. Alias Limited believes the 
+information in this publication is accurate as of its publication date.  
+The information and the software discussed in this document are subject to change without notice and are subject to applicable technical product descriptions. Alias Limited is not 
+responsible for any error that may appear in this document.  
+The software discussed in this document is furnished under a license and may be used or copied only in accordance with the terms of this license. No responsibility is assumed by 
+Alias Limited for the use or reliability of software on equipment that is not supplied by Intergraph or its affiliated companies. THE USER OF THE SOFTWARE IS EXPECTED TO 
+MAKE THE FINAL EVALUATION AS TO THE USEFULNESS OF THE SOFTWARE IN HIS OWN ENVIRONMENT.  
+Alias Limited is not responsible for the accuracy of delivered data including, but not limited to, catalog, reference and symbol data. Users should verify for themselves that the data is 
+accurate and suitable for their project work. 
+Trademarks 
+ISOGEN and SPOOLGEN are registered trademarks of Alias Limited. All other brands and product names are trademarks of their respective owners. 
+ 
+
+=== PAGE 3 ===
+ 
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 3 
+ 
+Contents 
+Preface ......................................................................................................................................................... 5 
+What's New in ISOGEN Symbol Keys ....................................................................................................... 7 
+Introduction ................................................................................................................................................. 9 
+Flanges and Balled Joints .................................................................................................................... 11 
+LSJE-Type Flanges .............................................................................................................................. 14 
+Hygienic Fittings ................................................................................................................................... 15 
+Miscellaneous Pipe Components ......................................................................................................... 21 
+Miscellaneous Items ............................................................................................................................. 24 
+Penetration Plate Items ........................................................................................................................ 25 
+Nozzles ................................................................................................................................................. 26 
+Inline Filters .......................................................................................................................................... 27 
+Instruments ........................................................................................................................................... 28 
+Pipe Blocks ........................................................................................................................................... 33 
+Vents ..................................................................................................................................................... 34 
+Traps ..................................................................................................................................................... 35 
+Welds .................................................................................................................................................... 36 
+Symbol Coupling................................................................................................................................... 41 
+Elbows and Bends ................................................................................................................................ 43 
+Couplings .............................................................................................................................................. 54 
+Caps ..................................................................................................................................................... 57 
+Crosses ................................................................................................................................................. 58 
+Fixed Length Pipes ............................................................................................................................... 60 
+Spindles ................................................................................................................................................ 62 
+Tees ...................................................................................................................................................... 65 
+Reducers .............................................................................................................................................. 70 
+Supports ............................................................................................................................................... 77 
+Unions ................................................................................................................................................... 79 
+Olets ..................................................................................................................................................... 80 
+Valves ................................................................................................................................................... 82 
+Three-Way Valves .......................................................................................................................... 85 
+Valves - 4-Way ............................................................................................................................... 86 
+
+=== PAGE 4 ===
+Contents 
+ 
+4 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Clamped Joints ..................................................................................................................................... 87 
+Liners (Connectors) .............................................................................................................................. 88 
+ 
+
+=== PAGE 5 ===
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 5 
+ 
+Preface 
+This document is intended to comprehensively cover all current ISOGEN symbol key symbol shapes. 
+Alias Limited gives you permission to print as many copies of this document as you need for non-commercial use at your company. You cannot 
+reprint this document for resale or redistribution outside your company. 
+ 
+
+=== PAGE 6 ===
+
+
+=== PAGE 7 ===
+ 
+ 
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 7 
+ 
+What's New in ISOGEN Symbol Keys 
+The following changes have been made to the ISOGEN Symbol Keys Reference Guide. 
+Version 2012 R2 (11.2) 
+ Two new ISOGEN symbol key definitions are introduced to allow for connection points to both jacket and core pipework: JFWN and JFSO. 
+For more information, see Flanges and Balled Joints (on page 10). 
+Version 2012 R1 (11.1) 
+ No changes have been made to this document in this release of the software. 
+Version 2012 (11.0) 
+ No changes have been made to this document in this release of the software. 
+
+=== PAGE 8 ===
+What's New in ISOGEN Symbol Keys 
+ 
+8 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+
+=== PAGE 9 ===
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 9 
+ 
+S E C T I O N  1  
+Introduction 
+All components generated by ISOGEN are defined by a unique code called a symbol key (SKEY). SKEYs contain 2-4 characters; the first two 
+characters define the type of component, and the last two characters define the end type, such as flanged, butt welded, or screwed. You can 
+specify an appropriate end condition by replacing the ** characters in the SKEY with one of the sets of characters from the table below. 
+SKEY Characters End Condition 
+BW Butt Weld 
+CP Compression 
+SW Socket Weld 
+FL Flanged 
+SC Screwed 
+PL Plain End 
+LN Liner Nut 
+LC Liner / Clamp 
+LR Reducing Liner / Nut 
+MP Male Part 
+PF Push Fit 
+GL Glued 
+CL Clamped 
+FA Flared 
+
+=== PAGE 10 ===
+Introduction 
+ 
+10 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+SKEY Characters End Condition 
+BS / SB Ball and Socket (used on fixed length type pipe work) 
+GF Gland (used on fixed length type pipe work) 
+ 
+ To denote the number of segments, replace the AT symbol  (@) in the SKEY with an integer value in the range 1 to 9, inclusive. Currently, 
+regardless of the value assigned to the AT sign, the software draws the symbol according to the SKEY plotted isometric shape. 
+ To denote the bend radius, replace the PLUS symbol  (+) in the SKEY with an integer value in the range 1 to 9, inclusive. 
+ 
+
+=== PAGE 11 ===
+Flanges and Balled Joints 
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 11 
+ 
+Flanges and Balled Joints 
+Description SKEY Shape Plotted  Isometric Shape User Definable PCF  Identification IDF  Record 
+Blind flange (also known as a Blank 
+flange. Symbol includes tapping 
+connection) 
+FLBL 
+ 
+  
+Yes FLANGE-BLIND 107 
+Flared/Loose backing flange  FLFL 
+ 
+  
+Yes FLANGE 105 
+Loose backing flange  FLLB 
+ 
+  
+Yes FLANGE 105 
+Reducing concentric flange  FLRC 
+ 
+  
+Yes 
+FLANGE- 
+REDUCING- 
+CONCENTRIC 
+65/0 
+Reducing eccentric flange  FLRE 
+ 
+  
+Yes 
+FLANGE- 
+REDUCING- 
+ECCENTRIC 
+65/0 
+Screwed flange  FLSC 
+ 
+  
+Yes FLANGE 105 
+Slip-on flange with J-type weld  FLSJ 
+ 
+  
+Yes FLANGE 105 
+Slip-on flange  FLSO 
+ 
+  
+Yes FLANGE 105 
+Orifice slip-on flange with  
+tapping connection FOSO 
+  
+  
+Yes FLANGE 105 
+
+=== PAGE 12 ===
+Flanges and Balled Joints 
+ 
+12 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable PCF  Identification IDF  Record 
+Socket weld flange  FLSW 
+ 
+  
+Yes FLANGE 105 
+Weld neck flange  FLWN 
+ 
+  
+Yes FLANGE 105 
+Orifice weld neck flange with  
+tapping connections  FOWN 
+ 
+  
+Yes FLANGE 105 
+Lap joint ring/Stub end combined flange FBSE 
+ 
+  
+Yes FLANGE 105 
+Cast/lined fixed flange (Female) – 
+Cast/lined flange FLFF 
+  
+  
+Yes FLANGE 105 
+Cast/lined rotating flange FLFR 
+ 
+  
+Yes FLANGE 105 
+Cast/lined flange with  
+Female gland type  FLGF 
+  
+  
+Yes FLANGE 105 
+Cast/ lined flange with  
+Male gland type  FLGM 
+  
+  
+Yes FLANGE 105 
+Glued (Female) connection FLGL 
+ 
+  
+Yes FLANGE 105 
+Push fit (Female) connection FLPF 
+ 
+  
+Yes FLANGE 105 
+
+=== PAGE 13 ===
+Flanges and Balled Joints 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 13 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable PCF  Identification IDF  Record 
+Seal-welded flange (Sarlun/Sargol) 
+(Female) connection FLSF 
+  
+  
+Yes FLANGE 105 
+Seal-welded flange (Sarlun/Sargol) 
+(Male) connection FLSM 
+  
+  
+Yes FLANGE 105 
+Concentric reducing flange FC** 
+  
+Yes FLANGE 105 
+Eccentric reducing flange FE** 
+  
+Yes FLANGE 105 
+Jacket weld neck flange JFWN 
+  
+Yes FLANGE 105 
+Jacket slip-on flange JFSO 
+  
+Yes FLANGE 105 
+ 
+
+
+=== PAGE 14 ===
+LSJE-Type Flanges 
+ 
+14 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+LSJE-Type Flanges 
+Description SKEY Shape Plotted  Isometric Shape User Definable PCF Identification IDF Record 
+Lap joint ring  
+(Loose backing flange)  FLRG 
+ 
+  
+Yes LAPJOINT-RING 106 
+Lap joint stub end 
+(Loose backing flange) FLSE 
+ 
+  
+Yes LAPJOINT-STUB- END 106 
+Stub end (LJSE) 
+(Use with glued//push fit systems) FLMP 
+ 
+  
+Yes LAPJOINT-STUB- END 106 
+ 
+
+=== PAGE 15 ===
+Hygienic Fittings 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 15 
+ 
+ 
+ 
+Hygienic Fittings 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+Male part connector 
+(Butt weld) MPBW 
+  
+  
+Yes No / No  CONNECTOR 111 
+Male part connector 
+(Expanded)  MPEX 
+  
+  
+Yes No / No CONNECTOR 111 
+Clamp liner (Butt weld) LCBW 
+ 
+  
+Yes No / No CONNECTOR 111 
+Clamp liner (Expanded)  LCEX 
+ 
+  
+Yes No / No CONNECTOR 111 
+Backing nut liner butt welded LNBW 
+ 
+  
+Yes No / No CONNECTOR 111 
+Backing nut liner LN 
+ 
+  
+Yes No / No CONNECTOR 111 
+Backing nut reducing liner  
+(Butt weld) LRBW 
+ 
+  
+Yes No / No CONNECTOR 111 
+Backing nut reducing liner 
+(Expanded)  LREX 
+ 
+  
+Yes No / No CONNECTOR 111 
+
+=== PAGE 16 ===
+Hygienic Fittings 
+ 
+16 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+Backing nut BNUT 
+ 
+  
+Yes No / No NUT 112 
+Clamp CLMP 
+ 
+  
+Yes No / No CLAMP 113 
+Drain/Vent plug DVP 
+ 
+  
+Yes No / No MISC-HYGENIC 114 
+Male blanking plug BM 
+ 
+  
+Yes No / No MISC-HYGENIC 114 
+Blank plain BP 
+ 
+  
+Yes No / No MISC-HYGENIC 114 
+Reducing concentric blank 
+boss BBC 
+ 
+  
+Yes No / No MISC-HYGENIC 114/0 
+Reducing eccentric blank boss BBE 
+ 
+  
+Yes No / No MISC-HYGENIC 114/0 
+Blank thermocouple connector BTP 
+ 
+  
+Yes No / -- MISC-HYGENIC 114/0 
+
+=== PAGE 17 ===
+Hygienic Fittings 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 17 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+Male-to-male adapter ADMM 
+  
+ 
+Yes No / -- MISC-HYGENIC 114 
+Male-to-female adapter ADMF 
+ 
+  
+Yes No / -- MISC-HYGENIC 114 
+2 port single level  
+(angle type) valve (Z) 2Z** 
+ 
+  
+Yes No / -- VALVE-ANGLE 75/76 
+2 port single level  
+(angle type) valve (D) 2D** 
+ 
+  
+Yes No / -- VALVE-ANGLE 75/76 
+3 port single level valve (Z) 3Z** 
+ 
+  
+Yes No / -- VALVE-3WAY 80/0/81/82 
+3 port single level valve (D) 3D** 
+ 
+  
+Yes No / No VALVE-3WAY 80/0/81/82 
+
+=== PAGE 18 ===
+Hygienic Fittings 
+ 
+18 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+4 port single level valve (Z) 4Z** 
+ 
+  
+Yes No/No VALVE-4WAY 85/0/86/87/ 88 
+4 port single level valve (D) 4D** 
+ 
+  
+Yes No/No VALVE-4WAY 
+85/0/ 
+86/87/ 
+88 
+Multi-port dual level valve with 
+D spindle  MD** 
+ 
+  
+Yes No/No VALVE- MULTIWAY 
+75/76/80/0/ 
+81/82 
+85/0/86/87/ 
+88 
+Multi-port dual level valve with 
+Z spindle MZ** 
+ 
+  
+Yes No/No VALVE- MULTIWAY 
+75/76 
+80/0/ 
+81/82 
+85/0/ 
+86/87/ 
+88 
+
+=== PAGE 19 ===
+Hygienic Fittings 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 19 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+Separator for multi-level valve  DUMY 
+ 
+  
+Yes No / No N/A N/A 
+Graduated control valve (D) IG** 
+ 
+  
+Yes Yes / No INSTRUMENT 90/93 
+Non-return valve NV** 
+ 
+  
+Yes No / Yes VALVE 130 
+3-way check valve  K3** 
+ 
+  
+Yes No / No VALVE-3WAY 80/0/ 81/82 
+Wide-angle cock  KV** 
+ 
+  
+Yes Yes / No VALVE 130 
+Pressure relief valve (Z) VZ** 
+ 
+  
+Yes No / Yes VALVE 130 
+
+=== PAGE 20 ===
+Hygienic Fittings 
+ 
+20 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF Identification IDF Record 
+Butterfly valve ZB** 
+ 
+  
+Yes Yes / No VALVE 130 
+Graduated control valve (Z) ZG** 
+ 
+  
+Yes Yes / No VALVE 130 
+Pressure relief valve 
+(Instrument type) (I) ZV** 
+ 
+  
+Yes No / Yes INSTRUMENT 90/93 
+ 
+ 
+
+=== PAGE 21 ===
+Miscellaneous Pipe Components 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 21 
+ 
+Miscellaneous Pipe Components 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Block angle BA** 
+ 
+ 
+Yes No / No 
+MISC- 
+COMPONENT- 
+ANGLE 
+95/96 
+Expansion bellows EX** 
+ 
+  
+Yes Yes / No MISC- COMPONENT 95/96 
+Flame trap FT** 
+ 
+  
+Yes Yes / No MISC- COMPONENT 95/96 
+Flexible hose FX** 
+ 
+ 
+Yes Yes / No MISC- COMPONENT 95/96 
+Hose coupling CH** 
+ 
+  
+Yes No / No MISC- COMPONENT 95/96 
+Non-category item  NC** 
+ 
+ 
+Yes No / No MISC- COMPONENT 95/96 
+
+=== PAGE 22 ===
+Miscellaneous Pipe Components 
+ 
+22 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Block offset BO** 
+ 
+  
+Yes Yes / No 
+MISC- 
+COMPONENT- 
+OFFSET 
+95/96 
+Block return BR** 
+ 
+  
+Yes Yes / No 
+MISC- 
+COMPONENT- 
+RETURN 
+95/96 
+Plug PL 
+ 
+  
+Yes No / No MISC- COMPONENT 95/96 
+Restrictor plate RP 
+ 
+  
+Yes Yes / No MISC- COMPONENT  95/96 
+Reinforcing pad RPAD 
+ 
+ 
+Yes No / No REINFORCEMEN T PAD  NONE 
+Sight glass SG** 
+ 
+ 
+Yes Yes / No MISC- COMPONENT  95/96 
+
+=== PAGE 23 ===
+Miscellaneous Pipe Components 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 23 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Slip plate SP 
+ 
+  
+Yes No / No MISC- COMPONENT  95/96 
+Slip ring SR 
+ 
+  
+Yes No / No MISC- COMPONENT  95/96 
+Spectacle blind (closed) SB 
+ 
+  
+Yes No / No MISC- COMPONENT 95/96 
+Spectacle blind (open) OB 
+ 
+  
+Yes No / No MISC- COMPONENT 95/96 
+Tundish (funnel) TU** 
+ 
+  
+Yes Yes / Yes MISC- COMPONENT 95/96 
+ 
+
+=== PAGE 24 ===
+Miscellaneous Items 
+ 
+24 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Miscellaneous Items 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Insulation symbol INPP 
+ 
+  
+Yes INSULATION- SYMBOL 149 
+Floor symbol FLOR 
+ 
+  
+Yes FLOOR-SYMBOL 149 
+Flow arrow FLOW 
+ 
+  
+Yes FLOW-ARROW 149 
+Location point LOPT 
+ 
+  
+No 
+ LOCATION-POINT 149  
+Wall symbol WALL 
+ 
+  
+Yes WALL-SYMBOL 149 
+Arrow head (dimension line) AR01 
+ 
+  
+Yes N/A N/A 
+Arrow head (message line) AR02 
+ 
+  
+Yes N/A N/A 
+Line break AR04 
+ 
+  
+Yes N/A N/A 
+ 
+
+=== PAGE 25 ===
+Penetration Plate Items 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 25 
+ 
+ 
+ 
+Penetration Plate Items 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Penetration plate (End sections) PLT1 
+ 
+ 
+Yes 
+Used with 
+PENETRATION- 
+PLATE 
+Used with 
+symbol key 
+CRPP 
+Penetration plate (Center sections) PLT2 
+ 
+ 
+Yes 
+Used with 
+PENETRATION- 
+PLATE 
+Used with 
+symbol key 
+CRPP 
+Locating pin LPIN 
+  
+ 
+  
+Yes MISC- COMPONENT 95/96 
+ 
+
+=== PAGE 26 ===
+Nozzles 
+ 
+26 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Nozzles 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF Record 
+Nozzle (Start flanged) NZFS 
+ 
+  
+Yes NOZZLE -31 
+Nozzle (End flanged) NZFE 
+ 
+  
+Yes NOZZLE -31 
+Nozzle (Start welded)  NZWS 
+  
+  
+Yes NOZZLE -31 
+Nozzle (End welded) NZWE 
+ 
+  
+Yes NOZZLE -31 
+ 
+
+=== PAGE 27 ===
+Inline Filters 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 27 
+ 
+ 
+ 
+Inline Filters 
+Description SKEY Shape 
+Plotted  
+Isometric 
+Shape 
+User  
+Definable 
+Flow Arrow /  
+Flow Dependency 
+PCF  
+Identification 
+IDF  
+Record 
+Straight through filter/strainer FI** 
+ 
+ 
+Yes Yes / Yes FILTER 136/137 
+Angle filter/strainer FA** 
+ 
+ 
+Yes No / No FILTER-ANGLE 136/137 
+Offset filter/strainer FO** 
+ 
+  
+Yes Yes / No FILTER-OFFSET 136/137 
+Return filter/strainer FR** 
+ 
+  
+Yes Yes / No FILTER-RETURN 136/137 
+ 
+
+=== PAGE 28 ===
+Instruments 
+ 
+28 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Instruments 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Instrument II** 
+ 
+ 
+Yes No / No INSTRUMENT 90/93 
+Instrument angle IA** 
+ 
+ 
+Yes No / No INSTRUMENT- ANGLE 90/93 
+Instrument offset IO** 
+ 
+  
+Yes Yes / No INSTRUMENT- OFFSET 90/93 
+Instrument return IR** 
+ 
+  
+Yes Yes / No INSTRUMENT- RETURN 90/93 
+Instrument dial IDPL N/A 
+ 
+No No / No INSTRUMENT- DIAL 90 
+
+=== PAGE 29 ===
+Instruments 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 29 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Instrument dial (flanged) IDFL N/A 
+ 
+No No / No INSTRUMENT- DIAL 90 
+Orifice plate OP 
+ 
+  
+Yes Yes / No INSTRUMENT 90/93 
+Restrictor plate PR 
+ 
+  
+Yes Yes/No INSTRUMENT 90/93 
+Rupture disk DR 
+ 
+  
+Yes Yes / Yes INSTRUMENT 90/93 
+Control valve CV** 
+ 
+ 
+Yes Yes / No INSTRUMENT 90/93 
+3-way control valve C3** 
+ 
+ 
+Yes No / No INSTRUMENT- 3WAY 90/0/91/93 
+4-way control valve C4** 
+ 
+  
+Yes No / No INSTRUMENT- 4WAY 90/0/ 91/92/93 
+
+=== PAGE 30 ===
+Instruments 
+ 
+30 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Angled control valve CA** 
+ 
+ 
+Yes No / No INSTRUMENT- ANGLE 90/93 
+Hand-operated control valve  HV** 
+ 
+  
+Yes Yes / No INSTRUMENT 90/93 
+Hand-operated 3-way  
+control valve H3** 
+  
+ 
+Yes No / No INSTRUMENT- 3WAY 90/0/ 91/93 
+Hand-operated 4-way 
+control valve H4** 
+  
+  
+Yes No / No INSTRUMENT- 4WAY 90/0/91/ 92/93 
+Hand-operated angled 
+control valve  HA** 
+ 
+ 
+Yes No / No INSTRUMENT- ANGLE 90/93 
+Motor-operated control valve MV** 
+ 
+ 
+Yes Yes / No INSTRUMENT 90/93 
+Motor-operated 3-way 
+control valve  M3** 
+  
+ 
+Yes No / No INSTRUMENT- 3WAY 90/0/ 91/93 
+
+=== PAGE 31 ===
+Instruments 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 31 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Motor-operated 4-way  
+control valve  M4** 
+ 
+  
+Yes No / No INSTRUMENT- 4WAY 90/0/91/ 92/93 
+Motor-operated angled  
+control valve  MA** 
+ 
+ 
+Yes No / No INSTRUMENT- ANGLE 90/93 
+Instrument angle control valve  
+with square indicator  SA** 
+ 
+ 
+Yes No / No INSTRUMENT- ANGLE 90/93 
+Square indicator control valve  SV** 
+ 
+  
+Yes Yes / No INSTRUMENT 90/93 
+Square indicator 3-way  
+control valve  S3** 
+ 
+  
+Yes No / No INSTRUMENT- 3WAY 90/0/ 91/93 
+Square indicator 4-way  
+control valve  S4** 
+ 
+  
+Yes No / No INSTRUMENT- 4WAY 90/0/ 91/92/93 
+Angled pressure  
+reducing angle  XA** 
+ 
+ 
+Yes Yes / No INSTRUMENT- ANGLE 90/93 
+
+=== PAGE 32 ===
+Instruments 
+ 
+32 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow / Flow Dependency PCF  Identification IDF  Record 
+Pressure reducing  
+instrument valve  XV** 
+ 
+  
+Yes Yes / Yes INSTRUMENT- ANGLE 90/93 
+Angled relief/valve  
+instrument valve  RA** 
+ 
+ 
+Yes Yes / No INSTRUMENT- ANGLE 90/93 
+Relief/Vent instrument valve RV** 
+ 
+  
+Yes Yes / No INSTRUMENT 90/93 
+
+=== PAGE 33 ===
+Pipe Blocks 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 33 
+ 
+ 
+ 
+Pipe Blocks 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Fixed length pipe block PF 
+ 
+  
+YES PIPE-BLOCK-FIXED 102 
+Variable length pipe block PV 
+ 
+  
+YES PIPE-BLOCK- VARIABLE 103 
+
+=== PAGE 34 ===
+Vents 
+ 
+34 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Vents 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Rupture disk RD 
+ 
+  
+Yes Yes / Yes SAFETY-DISC 134 
+ 
+
+=== PAGE 35 ===
+Traps 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 35 
+ 
+ 
+ 
+Traps 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow/ Flow Dependency PCF  Identification IDF  Record 
+Angle trap TA** 
+ 
+ 
+Yes No/No TRAP-ANGLE 132/133 
+Offset trap TO** 
+ 
+  
+Yes Yes/No  TRAP-OFFSET 132/133 
+Return trap TR** 
+ 
+  
+Yes Yes/No TRAP-RETURN 132/133 
+Inline trap TI** 
+ 
+  
+Yes No/No TRAP 132/133 
+ 
+
+=== PAGE 36 ===
+Welds 
+ 
+36 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Welds 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Workshop weld WW 
+  
+  Yes WELD 120 
+Dotted workshop weld WWD 
+  
+  Yes WELD 120 
+Site weld WS 
+ 
+  
+Yes WELD 120 
+Tack for site weld WST 
+ 
+  
+Yes WELD 120 
+Dotted site weld WSD 
+ 
+  
+Yes WELD 120 
+Field fit weld WF 
+ 
+  
+Yes WELD 120 
+Tack for field fit weld WFT 
+ 
+  
+Yes WELD 120 
+Dotted field fit weld WFD 
+ 
+  
+Yes WELD 120 
+Offshore weld WO 
+  
+  
+Yes WELD 120 
+Tack for offshore weld WOT 
+  
+  
+Yes WELD 120 
+
+=== PAGE 37 ===
+Welds 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 37 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Dotted offshore weld WOD 
+ 
+  
+Yes WELD 120 
+Offshore field fit weld WOF 
+  
+  
+Yes WELD 120 
+Tack for offshore field fit weld WOFT 
+  
+  
+Yes WELD 120 
+Special site weld 
+(non-spooling) WSSP 
+  
+  
+Yes WELD 120 
+Automatic workshop weld WWA 
+ 
+  
+Yes WELD 120 
+Field fit weld with shop test 
+requirement  WFST 
+  
+  
+Yes WELD 120 
+Field fit offshore dotted  WOFD 
+  
+  
+Yes WELD 120 
+Mitre weld WM N/A 
+ 
+No WELD 120 
+Mitre field fit weld WMF N/A 
+ 
+No WELD 120 
+Mitre tack weld WMT N/A 
+ 
+No WELD 120 
+
+=== PAGE 38 ===
+Welds 
+ 
+38 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Mitre field fit tack weld WMFT N/A 
+ 
+No WELD 120 
+Site workshop test weld WSST 
+ 
+  
+No WELD 120 
+Workshop shot test weld WWST 
+  
+  
+No WELD 120 
+Offshore shop test weld WOST 
+  
+  
+No WELD 120 
+Offshore field fit shop test weld WVST 
+  
+ 
+No WELD 120 
+Support weld ZSP* 
+ 
+  
+No WELD 120 
+
+=== PAGE 39 ===
+Welds 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 39 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Trunnion weld ZTN* 
+ 
+  
+No WELD 120 
+Reinforced trunnion ZTR* 
+ 
+  
+No WELD 120 
+Site socket/screwed 
+compression weld XX N/A 
+ 
+No WELD 120 
+Site socket/screwed 
+compression dotted weld  XXD N/A 
+ 
+No WELD 120 
+Erection seal weld WSSR 
+ 
+  
+Yes WELD 120 
+
+=== PAGE 40 ===
+ 
+ 
+40 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Offshore seal weld WOSR 
+  
+Yes WELD 120 
+ 
+
+
+=== PAGE 41 ===
+Symbol Coupling 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 41 
+ 
+Symbol Coupling 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Coupling with glued 
+connections COGL 
+  
+  
+Yes COUPLING 126 
+Coupling with push fit end 
+connections COPF 
+  
+ 
+Yes COUPLING 126 
+Coupling with flared end 
+connections  COFA 
+  
+ 
+Yes COUPLING 126 
+Coupling with clamped end 
+connections COCL 
+  
+ 
+Yes COUPLING 126 
+Coupling with Victaulic 
+connections (Grooved pipe) COVT 
+ 
+  
+Yes COUPLING 126 
+Coupling with Victaulic 
+connections (Welded 
+connections) 
+COVR 
+ 
+  
+Yes COUPLING 126 
+Coupling with compression 
+sleeve connections CSCP 
+  
+  
+Yes COUPLING 126 
+
+=== PAGE 42 ===
+Symbol Coupling 
+ 
+42 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Coupling with Grayloc 
+connections COGY 
+  
+  
+Yes COUPLING 126 
+ 
+ 
+
+=== PAGE 43 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 43 
+ 
+Elbows and Bends 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Butt weld elbow 
+(90° and 45°) ELBW N/A 
+ 
+No ELBOW 35/36 
+Compression elbow 
+(90° and 45°) ELCP N/A 
+ 
+No ELBOW 35/36 
+Screwed elbow  
+with Female ends 
+(90° and 45°) 
+ELSC N/A 
+ 
+No ELBOW 35/36 
+Socket weld elbow 
+(90° and 45°) ELSW N/A 
+ 
+No ELBOW 35/36 
+Screwed elbow  
+with Male ends 
+(90° and 45°) 
+EBSC N/A 
+ 
+No ELBOW 35/36 
+Socket weld teed elbow  
+(90° and 45°)  ETSW N/A 
+ 
+No ELBOW-TEED 70/0/71/72 
+
+=== PAGE 44 ===
+Elbows and Bends 
+ 
+44 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Screwed teed elbow  
+(90° and 45°)  ETSC N/A 
+ 
+No ELBOW-TEED 70/0/71/72 
+Compression teed elbow  
+(90° and 45°)  ETCP N/A 
+ 
+NO ELBOW-TEED 70/0/71/72 
+Butt weld teed elbow 
+(90° and 45°) ETBW N/A 
+ 
+No ELBOW-TEED 70/0/71/72 
+Reducing elbow ER** N/A 
+ 
+No ELBOW-REDUCING 35/36 
+Butt weld return elbow (180°)  EUBW N/A 
+ 
+No ELBOW 35/36 
+Plain end return elbow (180°)  EUPL N/A 
+ 
+No ELBOW 35/36 
+
+=== PAGE 45 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 45 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Flanged teed elbow 
+(All angles) BTFL N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Butt weld mitre tee bend  MTBW N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Butt weld mitre bend MIBW N/A 
+ 
+No BEND 30/31 
+Flanged mitre bend MIFL N/A 
+ 
+No BEND 30/31 
+Mitre tee bend with plain ends MTPL N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Flanged mitre tee bend  MTFL N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Flanged bend 
+(All angles) BEFL N/A 
+ 
+No BEND 30/31 
+
+=== PAGE 46 ===
+Elbows and Bends 
+ 
+46 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Bend (Multi-axis lined pipes. 
+Must be used in conjunction 
+with PIPELINE-TYPE.) 
+BM** N/A 
+ 
+No BEND 30/31 
+Flanged 180° return bend BUFL N/A 
+ 
+No BEND 30/31 
+Butt weld lobster bend  L@BW N/A 
+ 
+No BEND 30/31 
+Butt weld lobster tee bend  T@BW N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Flanged lobster bend L@FL N/A 
+ 
+No BEND 30/31 
+Flanged lobster tee bend T@FL N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Pulled bend (All angles) PB+D N/A 
+ 
+No BEND 30/31 
+
+=== PAGE 47 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 47 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+180° pulled return bend  BU+D N/A 
+ 
+No BEND 30/31 
+Pulled tee bend (All angles)  TB+D N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Pulled bend with weld  
+at each end  PBBW N/A 
+ 
+No BEND 30/31 
+180° Pulled return bend  
+with weld at each end  BUBW N/A 
+ 
+No BEND 30/31 
+Pulled tee bend with weld  
+at each end   TBBW N/A 
+ 
+No BEND-TEED 70/0/71/72 
+Bend with flared end  
+connection BEFA N/A 
+ 
+Ends only BEND 30/31 
+Bend with clamped end 
+connections BECL N/A 
+  
+Ends only BEND 30/31 
+Elbow with flared end 
+connections  ELFA N/A 
+ 
+Ends only ELBOW 35/36 
+
+=== PAGE 48 ===
+Elbows and Bends 
+ 
+48 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Elbow with clamped end 
+connections ELCL N/A 
+  
+Ends only ELBOW 35/36 
+Teed elbow with flared end 
+connections ETFA N/A 
+ 
+Ends only ELBOW-TEED 70/71/72 
+Teed elbow with clamped end 
+connections ETCL N/A 
+ 
+Ends only ELBOW-TEED 70/71/72 
+Reducing elbow with flared end 
+connections ERFA N/A 
+  
+Ends only ELBOW- REDUCING 35/36 
+Reducing elbow  
+with clamped end connections ERCL N/A 
+  
+Ends only ELBOW- REDUCING 35/36 
+ The ends on the following elbow and bend components can be individually designated MALE or FEMALE. 
+Elbow with flanged gland-type 
+end connections ELGF N/A 
+ 
+End only ELBOW 35/36 
+Elbow with flanged ball/socket 
+end connections ELBS N/A 
+ 
+Ends only  ELBOW 35/36 
+
+=== PAGE 49 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 49 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Teed elbow with  
+glued end connections  ETGL N/A 
+             
+Ends only ELBOW-TEED 70/71/72 
+ 
+Teed elbow with  
+push fit end connections   ETPF N/A 
+ 
+Ends only EBOW-TEED 70/71/72 
+ 
+Bend with flanged ball/socket 
+end connections BEBS N/A 
+ 
+Ends only BEND 30/31 
+ 
+Tee bend with flanged 
+ball/socket end connections BTBS N/A 
+ 
+Ends only BEND-TEED 70/0/71/72 
+ 
+
+=== PAGE 50 ===
+Elbows and Bends 
+ 
+50 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Bend with flanged gland-type 
+end connections BEGF N/A 
+ 
+Ends only BEND 30/31 
+ 
+Tee bend with flanged 
+gland-type end connections TBGF N/A 
+ 
+ 
+Ends only BEND-TEED 70/0/71/72 
+ 
+Bend with glued end 
+connections BEGL N/A 
+ 
+No BEND 30/31 
+ 
+Elbow with glued end 
+connections  ELGL N/A 
+      
+Ends only ELBOW 35/36 
+ 
+
+=== PAGE 51 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 51 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Elbow with push fit end 
+connections  ELPF N/A 
+ 
+Ends only ELBOW 35/36 
+ 
+Bend with push fit connections BEPF N/A 
+ 
+No BEND 30/31 
+ 
+Teed elbow  
+with glued end connections  ETGL N/A 
+             
+Ends only ELBOW-TEED 70/71/72 
+ 
+Teed elbow  
+with push fit end connections   ETPF N/A 
+ 
+Ends only EBOW-TEED 70/71/72 
+ 
+
+=== PAGE 52 ===
+Elbows and Bends 
+ 
+52 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Bend with flanged ball/socket 
+end connections BEBS N/A 
+ 
+Ends only BEND 30/31 
+ 
+Tee bend with flanged 
+ball/socket end connections BTBS N/A 
+ 
+Ends only BEND-TEED 70/0/71/72 
+ 
+Bend with flanged gland-type 
+end connections BEGF N/A 
+ 
+Ends only BEND 30/31 
+ 
+Tee bend with flanged 
+gland-type end connections TBGF N/A 
+ 
+ 
+Ends only BEND-TEED 70/0/71/72 
+ 
+
+=== PAGE 53 ===
+Elbows and Bends 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 53 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Bend with glued end 
+connections BEGL N/A 
+ 
+No BEND 30/31 
+ 
+Elbow with glued end 
+connections  ELGL N/A 
+      
+Ends only ELBOW 35/36 
+ 
+Elbow with push fit end 
+connections  ELPF N/A 
+ 
+Ends only ELBOW 35/36 
+ 
+ 
+ 
+
+=== PAGE 54 ===
+Couplings 
+ 
+54 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Couplings 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Nipple (Running screwed) NRSC 
+  
+ 
+Yes COUPLING 126 
+Nipple (Barrel screwed) NBSC 
+ 
+  
+Yes COUPLING 126 
+Coupling (Compression) COCP 
+ 
+  
+Yes COUPLING 126 
+Coupling (Screwed) COSC 
+ 
+  
+Yes COUPLING 126 
+Coupling (Screwed) COSW 
+ 
+  
+Yes COUPLING 126 
+Elbolet coupling (Butt weld) CEBW 
+ 
+  
+Yes ELBOLET 126/0 
+Elbolet coupling (Screwed) CESC 
+ 
+  
+Yes ELBOLET 126/0 
+Elbolet coupling (Socket weld)  CESW 
+ 
+  
+Yes ELBOLET 126/0 
+
+=== PAGE 55 ===
+Couplings 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 55 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Coupling with glued  
+end connections  COGL 
+  
+  
+Yes COUPLING 126 
+Coupling with push fit  
+end connections  COPF 
+  
+ 
+Yes COUPLING 126 
+Coupling with flared  
+end connections  COFA 
+  
+ 
+Yes COUPLING 126 
+Coupling with clamped  
+end connections  COCL 
+  
+ 
+Yes COUPLING 126 
+Coupling with Victaulic 
+connections (Grooved pipe) 
+ 
+COVT 
+ 
+  
+Yes COUPLING 126 
+Coupling with Victaulic 
+connections (Welded 
+connections) 
+ 
+COVR 
+ 
+  
+Yes COUPLING 126 
+Coupling with compression 
+sleeve connections CSCP 
+  
+  
+Yes COUPLING 126 
+
+=== PAGE 56 ===
+Couplings 
+ 
+56 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Coupling with Grayloc 
+connections COGY 
+  
+  
+Yes COUPLING 126 
+ 
+
+=== PAGE 57 ===
+Caps 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 57 
+ 
+ 
+ 
+Caps 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Butt weld cap (includes 
+tapping connections) KABW 
+  
+  
+Yes CAP 125/0 
+Compression cap KACP 
+ 
+  
+Yes CAP 125/0 
+Screwed cap KASC 
+ 
+  
+Yes CAP 125/0 
+Socket Weld cap KASW 
+ 
+  
+Yes CAP 125/0 
+Flanged cap KAFL 
+ 
+  
+Yes CAP 125/0 
+Glued cap KAGL 
+ 
+  
+Yes CAP 125/0 
+Push fit cap KAPF 
+ 
+  
+Yes CAP 125/0 
+Flared cap KAFA N/A 
+ 
+Yes CAP 125/0 
+Clamped cap KACL N/A 
+ 
+Yes CAP 125/0 
+
+=== PAGE 58 ===
+Crosses 
+ 
+58 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Crosses 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF Identification IDF  Record 
+Cross CR** N/A 
+ 
+No CROSS 50/0/51/ 52/53 
+Y-type cross CY** Uses YSML, YMED, & YLRG 
+ 
+Yes CROSS 50/0/51/ 52/53 
+Set-on cross CRSO N/A 
+ 
+No CROSS-SET-ON or CROSS-STUB 50/0/51/ 52/53 
+Set-on reinforced cross CRRF N/A 
+ 
+No CROSS-SET-ON or CROSS-STUB 50/0/51/ 52/53 
+Stub in cross CSSO N/A 
+ 
+No CROSS-SET-ON or CROSS-STUB 50/0/51/ 52/53 
+Stub in reinforced cross CSRF N/A 
+ 
+No CROSS-SET-ON or CROSS-STUB 50/0/51/ 52/53 
+Set-on cross (Y-type) CYSO Uses YSML, YMED, & YLRG 
+ 
+Yes CROSS-SET-ON or CROSS-STUB 50/0/51/ 52/53 
+Cross with flared  
+end connections CRFA N/A 
+  
+  
+Ends only CROSS 50/0/51/ 52/53 
+
+=== PAGE 59 ===
+Crosses 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 59 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF Identification IDF  Record 
+Cross with clamped  
+end connections CRCL N/A 
+ 
+Ends only CROSS 50/0/51/ 52/53 
+ The ends on the following cross components can be individually designated as MALE or FEMALE. 
+Cross with glued  
+end connections CRGL N/A 
+   
+Ends only CROSS 50/0/51/ 52/53  
+Cross with push fit  
+end connections CRPF N/A 
+ 
+Ends only CROSS 50/0/51/ 52/53  
+Cross with flanged ball/socket  
+end connections CRBS N/A 
+ 
+Ends only CROSS 50/0/51/ 52/53  
+Cross with flanged gland-type 
+end connections  CRGF  
+ 
+Ends only CROSS 50/0/51 /52/53  
+ 
+
+=== PAGE 60 ===
+Fixed Length Pipes 
+ 
+60 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Fixed Length Pipes 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF Identification IDF  Record 
+Fixed length pipe with  
+integral ends  FPFL 
+  
+  
+No PIPE-FIXED 101 
+Fixed length pipe without 
+flanged ends  FPPL 
+  
+ 
+Yes PIPE-FIXED 101 
+Fixed pipe with flared  
+end connections  FPFA  
+  
+Yes PIPE-FIXED 101 
+Fixed pipe with clamped  
+end conditions  FPCL  
+ 
+Yes PIPE-FIXED 101 
+ The ends on the following fixed length pipe components can be individually designated MALE or FEMALE. 
+Fixed pipe with glued  
+end connections  FPGL  
+ 
+Yes PIPE-FIXED 101  
+Fixed pipe with push fit  
+end connections  FPPF  
+ 
+Yes PIPE-FIXED 101  
+
+=== PAGE 61 ===
+Fixed Length Pipes 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 61 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF Identification IDF  Record 
+Fixed pipe with screwed  
+end connections   FPSC  
+ 
+Yes PIPE-FIXED 101  
+Fixed pipe with socket  
+end connections  FPSW  
+ 
+Yes PIPE-FIXED 101  
+Fixed pipe with compression 
+end connections  FPCP  
+ 
+Yes PIPE-FIXED 101  
+Fixed pipe with flanged 
+ball and socket  
+ 
+FPFL 
+ 
+  
+Yes PIPE-FIXED 101  
+ 
+
+=== PAGE 62 ===
+Spindles 
+ 
+62 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Spindles 
+Description SKEY Shape User Definable PCF Identification IDF Record 
+Spindle 1 01SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 2 02SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 3 03SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 4 04SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 5 05SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 6 06SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 7 07SP 
+ 
+YES SPINDLE-SKEY 126 
+
+=== PAGE 63 ===
+Spindles 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 63 
+ 
+Description SKEY Shape User Definable PCF Identification IDF Record 
+Spindle 8 08SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 9 09SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 10 10SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 11 11SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 12 12SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 13 13SP 
+ 
+YES SPINDLE-SKEY 126 
+Spindle 14 14SP 
+ 
+YES SPINDLE-SKEY 126 
+
+=== PAGE 64 ===
+Spindles 
+ 
+64 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY Shape User Definable PCF Identification IDF Record 
+Spindle 15 15SP 
+ 
+YES SPINDLE-SKEY 126 
+ 
+
+=== PAGE 65 ===
+Tees 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 65 
+ 
+ 
+ 
+Tees 
+Description SKEY SHAPE Plotted  Isometric Shape User Definable PCF  Identification IDF Record 
+Tee TE** 
+ 
+ 
+No TEE 45/0/46/47 
+Set-on tee TESO 
+ 
+ 
+No TEE-SET-ON or TEE-STUB 45/0/46/47 
+Set-on reinforced tee TERF 
+ 
+ 
+No TEE-SET-ON or TEE-STUB 45/0/46/47 
+Stub in tee TSSO 
+ 
+ 
+No TEE-SET-ON or TEE-STUB 45/0/4/47 
+Stub in reinforced tee TSRF 
+ 
+ 
+No TEE-SET-ON or TEE-STUB 45/0/46/47 
+Socket weld tee TESW 
+ 
+ 
+No TEE 45/0/46/47 
+
+=== PAGE 66 ===
+Tees 
+ 
+66 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY SHAPE Plotted  Isometric Shape User Definable PCF  Identification IDF Record 
+Swept branch tee (Butt weld) TSBW 
+ 
+ 
+No TEE 45/0/46/47 
+Swept branch tee (Flanged) TSFL 
+ 
+ 
+No TEE 45/0/46/47 
+Swept socket weld tee  TSSW 
+  
+ 
+No TEE 45/0/46/47 
+Swept compression tee  TSCP 
+  
+ 
+No TEE 45/0/46/47 
+Ghost tee TEGG 
+ 
+ 
+No TEE 45/0/46/47 
+
+=== PAGE 67 ===
+Tees 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 67 
+ 
+ 
+Description SKEY SHAPE Plotted  Isometric Shape User Definable PCF  Identification IDF Record 
+Pulled out tee TPUL 
+ 
+ 
+No TEE 45/0/46/47 
+Offset tee (reinforced set-on) 
+ TORF 
+ 
+ 
+No TEE 45/0/46/47 
+Set-on tangential tee 
+ TOSO 
+ 
+ 
+No TEE 45/0/46/47 
+Tangential tee (reinforced 
+set-on)  
+ 
+TTRF 
+ 
+ 
+No TEE 45/0/46/47 
+Offset tee (set-on) 
+ TTSO 
+ 
+ 
+No TEE 45/0/46/47 
+
+=== PAGE 68 ===
+Tees 
+ 
+68 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+Description SKEY SHAPE Plotted  Isometric Shape User Definable PCF  Identification IDF Record 
+Instrument tee IT** 
+ 
+ 
+No INSTRUMENT-TEE 40/41/42/0 
+Tee with flared  
+end connections  TEFA 
+ 
+ 
+Yes TEE 45/0/46/47 
+Tee with clamped  
+end connections  TECL 
+ 
+ 
+Yes TEE 45/0/46/47 
+ The ends on the following tee components can be individually designated as MALE or FEMALE. 
+Tee with glued  
+end connections  
+ 
+TEGL 
+ 
+ 
+ 
+Yes 
+ 
+TEE 
+ 
+45/0/46/47 
+  
+Tee with push fit  
+end connections  
+ 
+TEPF 
+ 
+ 
+ 
+Yes 
+ 
+TEE 
+ 
+45/0/46/47 
+  
+
+=== PAGE 69 ===
+Tees 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 69 
+ 
+ 
+Description SKEY  Plotted  Isometric Shape User Definable PCF  Identification IDF Record 
+Tee with flanged ball/socket 
+end connections  
+ 
+TEBS 
+ 
+ 
+   
+  
+Yes 
+ 
+TEE 
+ 
+45/0/46/47 
+   
+Tee with flanged gland-type 
+end connections  
+ 
+TEGF 
+ 
+ 
+ 
+Yes 
+ 
+TEE 
+ 
+45/0/46/47 
+  
+ SKEYs YLRG, YMED, and YSML are used with Y-Type Tees / Crosses. 
+Y-type tee (Large) YLRG 
+ 
+See Y-type tee/cross Yes See Y-type tee/cross   
+Y-type tee (Medium) YMED 
+  
+See 'Y' Type 
+Tee/Cross 
+Yes 
+ See Y-type tee/cross  
+Y-type tee (Small) YSML 
+  See Y-type tee/cross Yes See Y-type tee/cross 
+ 
+ 
+ 
+Y-type tee TY** Uses YSML, YMED or YLRG 
+ 
+Yes TEE 45/0/46/47 
+Set-on Y-type tee TYSO Uses YSML, YMED or YLRG 
+ 
+Yes TEE-SET-ON or TEE-STUB 45/0/46/47 
+
+=== PAGE 70 ===
+Reducers 
+ 
+70 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Reducers 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Concentric reducer RC** 
+ 
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer  
+(Butt weld with a connection) CTBW 
+  
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer  
+(Socket weld with a  
+connection) 
+CTSW 
+ 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer (Butt weld 
+fabricated from plate) CPBW 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer (Butt weld 
+swaged from pipe) CSBW 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer 
+(Fabricated from a plate with 
+a connection) 
+CZBW 
+ 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer 
+(Fabricated from plate -  
+flanged with a connection) 
+CZFL 
+ 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+
+=== PAGE 71 ===
+Reducers 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 71 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Concentric reducer (Swaged 
+from pipe with a connection) CXBW 
+  
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer 
+(Fabricated from plate - 
+flanged) 
+CPFL 
+ 
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer (Swaged 
+from plate - flange) CSFL 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer (Flanged 
+with a connection) CTFL 
+  
+  
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer (Swaged 
+from pipe - flanged with a 
+connection) 
+CXFL 
+ 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric reducer (Screwed 
+nipple) RNSC 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer (Screwed 
+with a connection) CTSC 
+  
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+
+=== PAGE 72 ===
+Reducers 
+ 
+72 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Concentric reducer  
+(Screwed bush) RBSC 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer  
+(Socket weld bush) RBSW 
+  
+ 
+Yes No / No REDUCER- CONCENTRIC 55/0 
+Eccentric reducer RE** 
+ 
+  
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer  
+(Fabricated from plate) EPBW 
+ 
+  
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer  
+(Swaged from pipe) ESBW 
+ 
+  
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer  
+(Butt weld with a connection)  OTBW 
+ 
+  
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer  
+(Butt weld fabricated from 
+plate with a connection)  
+EZBW 
+ 
+  
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer - butt weld 
+(Swaged from pipe  
+with connection)  
+EXBW 
+ 
+  
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+
+=== PAGE 73 ===
+Reducers 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 73 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Eccentric reducer  
+(Screwed with a connection)  OTSC 
+ 
+  
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer  
+(Fabricated from plate)  EPFL 
+ 
+  
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer - flanged 
+(Swaged from pipe)  ESFL 
+ 
+  
+Yes No/No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer  
+(Flanged with a connection) OTFL 
+ 
+ 
+Yes No /  N o 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer - flanged 
+(Fabricated from plate  
+with a connection) 
+EZFL 
+ 
+ 
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer - flanged 
+(Swaged from pipe  
+with a connection)  
+EXFL 
+ 
+ 
+Yes No / No 
+REDUCER- 
+ECCENTRIC- 
+TEED 
+60/0/61/ 
+62 
+Reducing block RFPL 
+ 
+ 
+Yes Yes / No REDUCER- CONCENTRIC 55/0 
+
+=== PAGE 74 ===
+Reducers 
+ 
+74 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Concentric reducer with 
+flared end connections RCFA N/A 
+ 
+Yes Yes / No REDUCER- CONCENTRIC 55/0 
+Concentric reducer with 
+clamped end connections RCCL N/A 
+ 
+Yes Yes / No REDUCER- CONCENTRIC 55/0 
+Concentric teed reducer with 
+flared end connections  CTFA N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Concentric teed reducer with 
+clamped end connections  CTCL N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+Eccentric reducer with flared 
+end connections  REFA N/A 
+ 
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric reducer with 
+clamped end connections RECL N/A 
+ 
+Yes No / No REDUCER- ECCENTRIC 55/0 
+Eccentric teed reducer with 
+flared end connections  OTFA N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+
+=== PAGE 75 ===
+Reducers 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 75 
+ 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Eccentric teed reducer with 
+clamped end connections OTCL N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+ The ends on the following cross components can be individually designated as MALE or FEMALE. 
+Eccentric reducer with  
+glued end conditions  REGL N/A 
+ 
+Yes No / No REDUCER- ECCENTRIC 55/0  
+Eccentric reducer with push 
+fit end connections  REPF N/A 
+ 
+Yes No / No REDUCER- ECCENTRIC 55/0  
+Eccentric teed reducer with 
+glued end connections  OTGL N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+  
+Eccentric teed reducer with 
+push fit end connections  OTPF N/A 
+ 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+ 
+
+=== PAGE 76 ===
+Reducers 
+ 
+76 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User Definable Flow Arrow /  Flow Dependency PCF  Identification IDF  Record 
+Concentric reducer with 
+glued end conditions RCGL N/A 
+  
+Yes Yes / No REDUCER- CONCENTRIC 55/0  
+Concentric reducer with push 
+fit end connections  RCPF N/A 
+ 
+Yes Yes / No REDUCER- CONCENTRIC 55/0  
+Concentric teed reducer with 
+glued end connections  CTGL N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+ 
+Concentric teed reducer with 
+push fit end connections   CTPF N/A 
+ 
+Yes No / No 
+REDUCER- 
+CONCENTRIC- 
+TEED 
+60/0/61/62 
+ 
+
+=== PAGE 77 ===
+Supports 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 77 
+ 
+ 
+ 
+Supports 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Hanger/Support 01HG (or Blank) 
+  
+  
+Yes SUPPORT 150 
+ Anchor ANCH 
+ 
+  
+Yes SUPPORT 150 
+ Duck foot DUCK 
+ 
+  
+Yes SUPPORT 150 
+Support - Guide/Steady GUID 
+ 
+  
+Yes SUPPORT 150 
+Skid SKID 
+ 
+  
+Yes SUPPORT 150 
+
+=== PAGE 78 ===
+Supports 
+ 
+78 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Spring SPRG 
+ 
+  
+Yes SUPPORT 150 
+Hanger HANG 
+ 
+  
+Yes SUPPORT 150 
+ 
+
+=== PAGE 79 ===
+Unions 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 79 
+ 
+ 
+ 
+Unions 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Union UN** 
+ 
+  
+Yes UNION 127/0 
+ 
+
+=== PAGE 80 ===
+Olets 
+ 
+80 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Olets 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Olet (Half coupling screwed)  HCSC 
+ 
+  
+Yes OLET 40/0/41/42 
+Olet (Half coupling socket weld) HCSW 
+ 
+  
+Yes OLET 40/0/41/42 
+Nipolet NI** 
+ 
+  
+Yes OLET 40/0/41/42 
+Nipolet (Screwed) NISC 
+ 
+  
+Yes OLET 40/0/41/42 
+Sockolet (Socket weld)  SKSW 
+ 
+  
+Yes OLET 40/0/41/42 
+Sweepolet (Butt weld) SWBW 
+ 
+  
+Yes OLET 40/0/41/42 
+
+=== PAGE 81 ===
+Olets 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 81 
+ 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Thredolet (Screwed) THSC 
+ 
+  
+Yes OLET 40/0/41/42 
+Weldolet (Butt weld) WTBW 
+ 
+  
+Yes OLET 40/0/41/42 
+Latrolet (Screwed) LASC 
+ 
+  
+Yes OLET 40/0/41/42 
+Latrolet (Socket weld) LASW 
+ 
+  
+Yes OLET 40/0/41/42 
+Latrolet (Butt weld) LABW 
+ 
+  
+Yes OLET 40/0/41/42 
+Flanged instrument tee  ITFL 
+ 
+  
+No INSTRUMENT-TEE 40/0/41/42 
+ 
+
+=== PAGE 82 ===
+Valves 
+ 
+82 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Valves 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow /  Flow Dependency PCF Identification IDF  Record 
+Angle valve AV** 
+ 
+  
+Yes Yes / No VALVE-ANGLE 75/76 
+Relief/Vent angle valve AR** 
+ 
+  
+Yes Yes / No VALVE-ANGLE 75/76 
+Pressure reducing angle valve AX** 
+ 
+  
+Yes Yes / No VALVE-ANGLE 75/76 
+Basic valve VV** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Check valve VC** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Check valve (alternative) CK** 
+ 
+  
+Yes No / Yes VALVE 130/0 
+Ball valve VB** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Butterfly valve VY** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+
+=== PAGE 83 ===
+Valves 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 83 
+ 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow /  Flow Dependency PCF Identification IDF  Record 
+Diaphragm valve VD** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Globe valve VG** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Pressure reducing valve VX** 
+ 
+  
+Yes Yes / Yes VALVE 130/0 
+Cock valve VK** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Gate valve  VT** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Needle valve VN** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Plug valve VP** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+Relief/Vent valve VR** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+
+=== PAGE 84 ===
+Valves 
+ 
+84 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+Description SKEY Shape Plotted  Isometric Shape User  Definable Flow Arrow /  Flow Dependency PCF Identification IDF  Record 
+Slide valve VS** 
+ 
+  
+Yes Yes / No VALVE 130/0 
+
+=== PAGE 85 ===
+Valves 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 85 
+ 
+ 
+ 
+ 
+Three-Way Valves 
+Description SKEY Shape Plotted Isometric Shape User  Definable PCF  Identification IDF  Record 
+Three-way valve V3** 
+ 
+ 
+  
+Yes VALVE-3WAY 80/0/81/ 82/83 
+
+=== PAGE 86 ===
+Valves 
+ 
+86 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Valves - 4-Way 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Four-way valve V4** 
+ 
+  
+Yes VALVE-4WAY 80/0/81/82/83 
+ 
+ 
+
+=== PAGE 87 ===
+Clamped Joints 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 87 
+ 
+Clamped Joints 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Flared clamp CLMP 
+ 
+  
+Yes CLAMP 113 
+Victaulic (Grooved pipe end 
+type) CLVT 
+ 
+  
+Yes CLAMP 113 
+Victaulic (Welded/forged ring 
+type) CLVR 
+ 
+  
+Yes CLAMP 113 
+Compression sleeve coupling CLCS 
+ 
+ 
+Yes CLAMP 113 
+Grayloc-type coupling CLGY 
+ 
+ 
+Yes CLAMP 113 
+ 
+
+=== PAGE 88 ===
+Liners (Connectors) 
+ 
+88 ISOGEN Symbol Key (SKEY) Definitions Reference Guide 
+ 
+ 
+Liners (Connectors) 
+Description SKEY Shape Plotted  Isometric Shape User  Definable PCF  Identification IDF  Record 
+Grayloc socket weld connector LNSW N/A N/A N/A N/A N/A 
+Grayloc (Female) screwed connector LNSC N/A N/A N/A N/A N/A 
+Victaulic - Welded ring type (Number 
+of welds set by Option Switch 77 
+Position 7)  
+LVBW N/A N/A N/A N/A N/A 
+
+=== PAGE 89 ===
+ 
+ 
+ISOGEN Symbol Key (SKEY) Definitions Reference Guide 89 
+ 
+ 

@@ -1,14 +1,2 @@
-# Generated analysis files and local tooling
-.tools/
-tmp/
-__pycache__/
-*.pyc
-
-# Raw project source files are kept locally; the web-ready data is pipelines.json
-金陵航煤改造项目IDF文件/
-*.idf
-
-# Local runtime noise
-*.log
-.DS_Store
-Thumbs.db
+# Intentionally empty: this repository archives every project file.
+# Git's own .git directory is excluded automatically.
