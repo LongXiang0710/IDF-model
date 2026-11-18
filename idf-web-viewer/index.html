@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="金陵航煤改造项目固定 IDF 管网三维审阅系统">
+  <title>金陵航煤管网审阅系统</title>
+  <link rel="stylesheet" href="./styles.css?v=7">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">IDF</div>
+      <div><strong>金陵航煤管网审阅系统</strong><span>JINLING JET FUEL IDF REVIEW</span></div>
+    </div>
+    <div class="top-actions">
+      <span class="service-state"><i></i>本地解析服务在线</span>
+      <time id="clock">--:--:--</time>
+      <button id="sampleButton" class="ghost-button">刷新项目数据</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar left-panel">
+      <button id="collapseLeft" class="collapse-button" title="收起资源面板">‹</button>
+      <section>
+        <p class="eyebrow">项目数据</p>
+        <h1>从等轴图数据<br>重建空间管网</h1>
+        <p class="intro">本系统固定接入“金陵航煤改造项目IDF文件”，页面打开后自动加载全部管线。</p>
+      </section>
+
+      <section class="project-card">
+        <div class="project-avatar">JL</div>
+        <div><strong>金陵航煤改造项目</strong><span>运行中 · IDF Spatial Model</span></div>
+      </section>
+
+      <section class="resource-stats">
+        <div><b id="resourceFiles">74</b><span>IDF 文件</span></div>
+        <div><b id="resourceKinds">34</b><span>SKEY 类型</span></div>
+        <div><b id="resourceSize">—</b><span>数据体量</span></div>
+      </section>
+
+      <section class="fixed-source">
+        <div class="source-lock">◆</div>
+        <div><strong>固定项目数据源</strong><span>金陵航煤改造项目 IDF · 只读加载</span></div>
+      </section>
+
+      <section>
+        <div class="section-title"><span>管线清单</span><span id="fileCount">0</span></div>
+        <label class="tree-search"><span>⌕</span><input id="pipelineSearch" type="search" placeholder="搜索管线、系统或文件名"></label>
+        <div id="pipelineList" class="pipeline-list">
+          <div class="empty-list">尚未载入文件</div>
+        </div>
+      </section>
+
+      <section class="legend">
+        <div class="section-title"><span>元件图例</span></div>
+        <button data-filter="pipe" class="legend-row active"><i class="dot pipe"></i><span>直管</span><b id="countPipe">0</b></button>
+        <button data-filter="elbow" class="legend-row active"><i class="dot elbow"></i><span>弯头</span><b id="countElbow">0</b></button>
+        <button data-filter="branch" class="legend-row active"><i class="dot branch"></i><span>三通 / 支管座</span><b id="countBranch">0</b></button>
+        <button data-filter="reducer" class="legend-row active"><i class="dot reducer"></i><span>异径管</span><b id="countReducer">0</b></button>
+        <button data-filter="valve" class="legend-row active"><i class="dot valve"></i><span>阀门</span><b id="countValve">0</b></button>
+        <button data-filter="flange" class="legend-row active"><i class="dot flange"></i><span>法兰 / 连接件</span><b id="countFlange">0</b></button>
+        <button data-filter="instrument" class="legend-row active"><i class="dot instrument"></i><span>仪表 / 调节阀</span><b id="countInstrument">0</b></button>
+        <button data-filter="misc" class="legend-row active"><i class="dot misc"></i><span>其他管件</span><b id="countMisc">0</b></button>
+      </section>
+    </aside>
+
+    <section class="viewport-wrap">
+      <div class="view-toolbar">
+        <div class="segmented">
+          <button class="active" data-view="solid">三维实体</button>
+          <button data-view="topology">三维拓扑</button>
+        </div>
+        <div class="view-actions">
+          <button id="fitButton" title="复位并适应视图">⌂ 复位</button>
+          <button id="zoomInButton" title="以鼠标所指或选中元件为中心持续放大">＋</button>
+          <button id="zoomOutButton" title="缩小">−</button>
+          <button id="focusButton" title="聚焦选中对象（F）">⌾ 聚焦</button>
+          <button id="spinButton" title="自动旋转">↻ 旋转</button>
+          <button id="fullscreenButton" title="全屏">⛶</button>
+          <button id="axisButton" class="active" title="坐标轴">XYZ</button>
+        </div>
+      </div>
+      <div class="review-toolbar" aria-label="模型审阅工具">
+        <span>审阅工具</span>
+        <button id="hideButton" disabled>⊘ 隐藏对象</button>
+        <button id="isolateButton" disabled>◉ 仅看选定</button>
+        <button id="translucentButton" disabled>◐ 半透明</button>
+        <button id="showAllButton">◎ 全部显示</button>
+      </div>
+      <div id="viewport"></div>
+      <div id="componentTooltip" class="component-tooltip" role="tooltip" aria-hidden="true"></div>
+      <div id="lodHint" class="lod-hint">项目总览 LOD · 选择左侧管线查看精细管件</div>
+      <div id="emptyState" class="empty-state">
+        <div class="scan-cube"><span></span><span></span><span></span></div>
+        <h2>等待管线数据</h2>
+        <p>导入一份或多份 IDF 文件，立即生成可交互三维模型</p>
+      </div>
+      <div class="coordinate-hint"><span class="live-dot"></span> 实时渲染 · <b id="fps">-- FPS</b>　左键旋转 · 右键平移 · 滚轮指向局部持续缩放 · F 聚焦</div>
+      <div id="loading" class="loading" hidden><i></i><span>正在重建管网…</span></div>
+    </section>
+
+    <aside class="sidebar right-panel">
+      <button id="collapseRight" class="collapse-button" title="收起属性面板">›</button>
+      <section>
+        <p class="eyebrow">模型摘要</p>
+        <div class="stats-grid">
+          <div><strong id="statPipelines">0</strong><span>管线</span></div>
+          <div><strong id="statComponents">0</strong><span>元件</span></div>
+          <div><strong id="statNodes">0</strong><span>节点</span></div>
+          <div><strong id="statLength">0 m</strong><span>总长度</span></div>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">INSPECTOR</p>
+        <div class="section-title"><span>对象属性</span><span id="selectedType">—</span></div>
+        <dl id="inspector" class="inspector">
+          <div><dt>状态</dt><dd>点击模型查看属性</dd></div>
+        </dl>
+      </section>
+
+      <section>
+        <div class="section-title"><span>坐标系与单位</span></div>
+        <div class="meta-card">
+          <div><span>源坐标单位</span><b id="sourceUnit">MM</b></div>
+          <div><span>显示比例</span><b>全项目统一比例尺</b></div>
+          <div><span>坐标映射</span><b>E / U / N</b></div>
+        </div>
+      </section>
+
+      <section class="architecture">
+        <div class="section-title"><span>IDF 解析架构</span></div>
+        <ol>
+          <li><b>01</b><span>记录切分<small>Header / Attributes / Geometry</small></span></li>
+          <li><b>02</b><span>元件识别<small>Type code + SKEY</small></span></li>
+          <li><b>03</b><span>拓扑重建<small>Coordinate hashing</small></span></li>
+          <li><b>04</b><span>三维映射<small>Mesh / Node / Edge</small></span></li>
+        </ol>
+      </section>
+    </aside>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="./skey-catalog.js?v=4"></script>
+  <script src="./app.js?v=14"></script>
+</body>
+</html>
